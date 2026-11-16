@@ -28,6 +28,11 @@ jobs:
 
       - name: Vérifier les calculs
         run: python verifier.py
+
+      - name: Afficher le message secret
+        env:
+          MESSAGE: ${{ secrets.MESSAGE }}
+        run: 'echo "$MESSAGE"'
   
   publier:
     needs: qualite
