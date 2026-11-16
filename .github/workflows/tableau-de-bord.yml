@@ -37,6 +37,6 @@ jobs:
 
       - name: Garder le rapport
         uses: actions/upload-artifact@v7
-         with:
+        with:
           name: rapport
           path: public/
